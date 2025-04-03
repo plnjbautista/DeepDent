@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['bleeding', 'redness', 'swelling']
+
+roboflow:
+  workspace: deepdent-gingi
+  project: deepdent-gingi-annotation
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/deepdent-gingi/deepdent-gingi-annotation/dataset/1
