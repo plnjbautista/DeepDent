@@ -1,0 +1,6 @@
+tensorflow
+onnx
+onnx-tf
+numpy
+tensorflow-addons
+tf-keras
