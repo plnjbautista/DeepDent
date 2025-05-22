@@ -1,0 +1,6 @@
+train: C:\Users\jilln\LEARNING RESOURCES 2024-2025\3rd Year - 2nd Semester\Research\Gingi Preprocessing\DeepDent\gingivitis\dataset_\train\images
+val: C:\Users\jilln\LEARNING RESOURCES 2024-2025\3rd Year - 2nd Semester\Research\Gingi Preprocessing\DeepDent\gingivitis\dataset_\valid\images
+test: C:\Users\jilln\LEARNING RESOURCES 2024-2025\3rd Year - 2nd Semester\Research\Gingi Preprocessing\DeepDent\gingivitis\dataset_\test\images
+
+nc: 4  # Number of classes
+names: ['redness', 'bleeding', 'swelling', 'none']  # Modify this based on your classes
