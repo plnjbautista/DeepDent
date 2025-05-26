@@ -56,18 +56,28 @@ class _PerioScreenState extends State<PerioScreen> {
           if (snapshot.connectionState == ConnectionState.done) {
             return Stack(
               children: [
-                CameraPreview(_controller),
+                // Fullscreen camera preview
+                Positioned.fill(
+                  child: CameraPreview(_controller),
+                ),
+                // 2:1 Ratio Frame Overlay, centered in the preview
                 Center(
-                  child: Container(
-                    width: 250,
-                    height: 250,
-                    decoration: BoxDecoration(
-                      border: Border.all(
-                        color: Colors.white.withOpacity(0.8),
-                        width: 4,
-                      ),
-                      color: Colors.transparent,
-                    ),
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      double frameWidth = constraints.maxWidth * 0.8;
+                      double frameHeight = frameWidth / 2;
+                      return Container(
+                        width: frameWidth,
+                        height: frameHeight,
+                        decoration: BoxDecoration(
+                          border: Border.all(
+                            color: Colors.white.withOpacity(0.8),
+                            width: 4,
+                          ),
+                          color: Colors.transparent,
+                        ),
+                      );
+                    },
                   ),
                 ),
                 // Flash Toggle Button
@@ -93,7 +103,7 @@ class _PerioScreenState extends State<PerioScreen> {
                     tooltip: 'Toggle Flash',
                   ),
                 ),
-                // Take Picture Button
+                // Take Picture Button (overlay, not pushing up the preview)
                 Positioned(
                   bottom: 40,
                   left: 0,
