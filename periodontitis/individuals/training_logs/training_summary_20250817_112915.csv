@@ -1,0 +1,2 @@
+timestamp,model_path,final_box_loss,final_cls_loss,final_dfl_loss,final_seg_loss,best_fitness,training_time,mAP50,mAP50_95
+20250817_112915,yolov8n-seg.pt,N/A,N/A,N/A,N/A,1.6956181161931354,N/A,1.6630319197934242,N/A

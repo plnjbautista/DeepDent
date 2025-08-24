@@ -1,0 +1,6 @@
+names:
+- object
+nc: 1
+test: C:\Users\n3des\Desktop\New folder\yolo_dataset_enhanced_augmented_split\test
+train: C:\Users\n3des\Desktop\New folder\yolo_dataset_enhanced_augmented_split\train
+val: C:\Users\n3des\Desktop\New folder\yolo_dataset_enhanced_augmented_split\valid
